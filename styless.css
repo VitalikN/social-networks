@@ -1,96 +1,100 @@
 * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: 'Poppins', sans-serif;
- }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
- html,
- body {
-     display: grid;
-     height: 100%;
-     width: 100%;
-     place-items: center;
-     background: linear-gradient(315deg, #ffffff 0%, #d7e1d7ec 74%);
- }
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1d7ec 74%);
+}
 
+.contenedor .boton {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 0 5px;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+}
 
- .contenedor .boton {
-     display: inline-block;
-     width: 60px;
-     height: 60px;
-     float: left;
-     margin: 0 5px;
-     background: #fff;
-     border-radius: 50px;
-     cursor: pointer;
-     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-     transition: all 0.5s ease-out;
-     overflow: hidden;
- }
+.contenedor .boton .icono {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.5s ease-out;
+}
 
- .contenedor .boton .icono {
-     display: inline-block;
-     height: 60px;
-     width: 60px;
-     text-align: center;
-     border-radius: 50px;
-     box-sizing: border-box;
-     line-height: 60px;
-     transition: all 0.5s ease-out;
- }
+.contenedor .boton .icono i {
+  font-size: 25px;
+  line-height: 60px;
+}
 
- .contenedor .boton .icono i {
-     font-size: 25px;
-     line-height: 60px;
- }
+.contenedor .boton span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
 
- .contenedor .boton span {
-     font-size: 20px;
-     font-weight: 500;
-     line-height: 60px;
-     margin-left: 10px;
- }
+.contenedor .boton:hover {
+  width: 200px;
+}
 
- .contenedor .boton:hover {
-     width: 200px;
+.contenedor .boton:nth-child(1):hover .icono {
+  background: #4267b2;
+}
 
- }
+.contenedor .boton:nth-child(2):hover .icono {
+  background: #1da1f2;
+}
 
- .contenedor .boton:nth-child(1):hover .icono {
-     background: #4267b2;
- }
+.contenedor .boton:nth-child(3):hover .icono {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline-color: #ab2d76;
+}
 
- .contenedor .boton:nth-child(2):hover .icono {
-     background: #1da1f2;
- }
+.contenedor .boton:nth-child(4):hover .icono {
+  background: #03921b;
+}
 
- .contenedor .boton:nth-child(3):hover .icono {
-     background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-     outline-color: #ab2d76;
- }
+.contenedor .boton:hover .icono i {
+  color: #fff;
+}
 
- .contenedor .boton:nth-child(4):hover .icono {
-     background: #03921b;
- }
+.contenedor .boton:nth-child(1):hover span {
+  color: #4267b2;
+}
 
- .contenedor .boton:hover .icono i {
-     color: #fff;
- }
+.contenedor .boton:nth-child(2):hover span {
+  color: #1da1f2;
+}
 
- .contenedor .boton:nth-child(1):hover span {
-     color: #4267b2;
- }
+.contenedor .boton:nth-child(3):hover span {
+  color: #e1306c;
+}
 
- .contenedor .boton:nth-child(2):hover span {
-     color: #1da1f2;
- }
-
- .contenedor .boton:nth-child(3):hover span {
-     color: #e1306c;
- }
-
- .contenedor .boton:nth-child(4):hover span {
-     color: #03921b;
- }
-
+.contenedor .boton:nth-child(4):hover span {
+  color: #03921b;
+}
